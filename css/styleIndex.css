@@ -1,0 +1,598 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.container {
+  max-width: 100%;
+}
+
+.navbar-title {
+  text-align: center;
+  font-size: 25px;
+  color: goldenrod;
+  
+}
+
+.corporate {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(18, 17, 17);
+  margin-right: auto;
+  padding: 10px;
+  background-color: #e1e8ed;
+  border-radius: 50px;
+}
+
+.navbarindex {
+  text-align: center;
+  position: absolute;
+}
+
+.mainnav {
+  width: 100%; /* Largura total */
+  position: fixed; /* Opcional: fixa no topo */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  justify-content: center;
+  height: 70px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  font-family: "Tangerine", serif;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+#about {
+  color: white;
+  background-color: #1b3c53;
+}
+
+#mission {
+  color: black;
+  background-color: #82b8e7;
+}
+
+.card-body {
+  text-align: justify;
+}
+
+#vision {
+  color: black;
+  background-color: #c0def3;
+}
+.card-image-about {
+  max-width: 100%;
+  height: 300px;
+  background-image: url("../img/backgroud/ideia.jpg");
+  background-size: cover; /* Faz a imagem cobrir o card */
+  background-position: center; /* Centraliza */
+  background-repeat: no-repeat; /* Evita repetição */
+}
+.card-image-mission {
+  max-width: 100%;
+  height: 300px;
+  background-image: url("../img/backgroud/iqbalstock-muslim-7520627.jpg");
+  background-size: cover; /* Faz a imagem cobrir o card */
+  background-position: center; /* Centraliza */
+  background-repeat: no-repeat; /* Evita repetição */
+}
+.card-image-vision {
+  max-width: 100%;
+  height: 300px;
+  background-image: url("../img/backgroud/heckimg-tree-7619791.jpg");
+  background-size: cover; /* Faz a imagem cobrir o card */
+  background-position: center; /* Centraliza */
+  background-repeat: no-repeat; /* Evita repetição */
+}
+
+.card-image-modal-deep {
+  width: 90%;
+  height: 300px;
+  border-radius: 30px;
+  background-image: url("../img/backgroudmodal/pexels-laptop-1839876.jpg");
+  background-size: cover; /* Faz a imagem cobrir o card */
+  background-position: center; /* Centraliza */
+  background-repeat: no-repeat; /* Evita repetição */
+  border-radius: 20px;
+  margin-top: 10px;
+  margin: auto;
+}
+.card-image-modal-regular {
+  width: 90%;
+  height: 300px;
+  border-radius: 30px;
+  background-image: url("../img/backgroudmodal/code.jpg");
+  background-size: cover; /* Faz a imagem cobrir o card */
+  background-position: center; /* Centraliza */
+  background-repeat: no-repeat; /* Evita repetição */
+  margin: auto;
+}
+
+.card-image-modal-construction {
+  width: 90%;
+  height: 300px;
+  border-radius: 30px;
+  background-image: url("../img/backgroudmodal/laety79-telephone-612061.jpg");
+  background-size: cover; /* Faz a imagem cobrir o card */
+  background-position: center; /* Centraliza */
+  background-repeat: no-repeat; /* Evita repetição */
+  margin: auto;
+}
+
+.modal-body {
+  font-size: 13px;
+  text-align: justify;
+}
+
+.modal-title {
+  font-family: "Tangerine", serif;
+}
+
+.dropdown-item:hover {
+  background-color: white;
+  color: black;
+}
+
+.row {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 80vh;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  font-size: 13px;
+  margin: auto;
+}
+
+.cards-info {
+  max-width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 50px) and (max-width: 576px) {
+  .mainnav {
+    display: none;
+  }
+
+  .card-image-about {
+    display: none;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  /* start slides */
+
+  .slider {
+    margin: 0 auto;
+    width: 100%; /* Largura fixa */
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: -70px;
+  }
+  .slides {
+    width: 400%; /* Largura fixa */
+    height: 400px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slide input {
+    display: none;
+  }
+
+  .slide {
+    width: 25%;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    transition: 5s;
+  }
+  .slide .slidesimg {
+    width: 550px;
+    height: 260px;
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+  }
+
+  #rd1:checked ~ .slideone {
+    margin-left: 0;
+  }
+  #rd2:checked ~ .slideone {
+    margin-left: -50%;
+  }
+  #rd3:checked ~ .slideone {
+    margin-left: -100%;
+  }
+  #rd4:checked ~ .slideone {
+    margin-left: -150%;
+  }
+  /* end slides */
+
+  .navbar {
+    width: 100%; /* Largura fixa */
+    height: 70px; /* Altura fixa */
+    text-align: right;
+    font-family: "Tangerine", serif;
+  }
+
+  .corporate {
+    font-size: 15px;
+    font-weight: bold;
+   background-color: #e1e8ed;
+  border-radius: 50px;
+    margin-right: auto;
+    padding: 0px;
+    font-family: "Tangerine", serif;
+  }
+
+  .corporate {
+    font-family: "Tangerine", serif;
+    font-size: 18px;
+  }
+  .card {
+    width: 100%;
+    height: 520px;
+  }
+
+  #about {
+    color: black;
+    margin-top: 0px;
+    background-color: #e6ebed;
+    border-radius: 0;
+    height: 330px;
+  }
+
+  #mission {
+    color: black;
+    background-color: #f5f6f8;
+    margin-top: 0px;
+    border-radius: 0;
+  }
+
+  #vision {
+    color: black;
+    background-color: #e1e8ed;
+    margin-top: 0px;
+    border-radius: 0;
+  }
+
+  .card-title {
+    font-family: "Tangerine", serif;
+    font-size: 25px;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+
+  .card-image-about {
+    width: 100%;
+    height: 300px;
+    /* background-image: url("../img/backgroud/bkg\ room.jpeg"); */
+    background-size: cover; /* Faz a imagem cobrir a área [1] */
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+    margin: auto;
+  }
+  .card-image-mission {
+    max-width: 100%;
+    height: 300px;
+    background-image: url("../img/backgroud/ideia.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+  }
+  .card-image-vision {
+    max-width: 100%;
+    height: 300px;
+    background-image: url("../img/backgroud/iqbalstock-muslim-7520627.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+  }
+
+  .card-image-modal-deep {
+    width: 90%;
+    height: 200px;
+    border-radius: 30px;
+    background-image: url("../img/backgroudmodal/code.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+    border-radius: 20px;
+    margin-top: 10px;
+    margin: auto;
+  }
+  .card-image-modal-regular {
+    width: 90%;
+    height: 200px;
+    border-radius: 30px;
+    background-image: url("../img/backgroudmodal/pexels-laptop-1839876.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+    margin: auto;
+  }
+
+  .card-image-modal-construction {
+    width: 90%;
+    height: 200px;
+    border-radius: 30px;
+    background-image: url("../img/backgroudmodal/laety79-telephone-612061.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+    margin: auto;
+  }
+
+  .modal-body {
+    font-size: 13px;
+    text-align: justify;
+  }
+  .row {
+    max-height: 1200px;
+    max-width: 1200px; /* Largura máxima do conteúdo do body */
+    margin-top: 70px;
+  }
+
+  .offcanvas-body {
+    text-align: right;
+  }
+
+  #offcanvasDarkNavbar {
+    width: 250px; /* Largura fixa */
+    height: 500px;
+    right: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .mainnav {
+    display: none;
+  }
+
+  .slider {
+    display: none;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  .container {
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 35px;
+  }
+
+  .card {
+    width: 1500px;
+    height: 700px;
+  }
+
+  #about {
+    color: black;
+    margin-top: 0px;
+    background-color: #e6ebed;
+    border-radius: 0;
+  }
+
+  #mission {
+    color: black;
+    background-color: #f5f6f8;
+    margin-top: 0px;
+    border-radius: 0;
+  }
+
+  #vision {
+    color: black;
+    background-color: #e1e8ed;
+    margin-top: 0px;
+    border-radius: 0;
+  }
+
+  .card-image-about {
+    max-width: 100%;
+    height: 400px;
+    background-image: url("../img/backgroud/ideia.jpg");
+    background-size: cover; /* Faz a imagem cobrir a área [1] */
+  }
+  .card-image-mission {
+    max-width: 100%;
+    height: 450px;
+    background-image: url("../img/backgroud/iqbalstock-muslim-7520627.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+  }
+  .card-image-vision {
+    max-width: 100%;
+    height: 450px;
+    background-image: url("../img/backgroud/heckimg-tree-7619791.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+  }
+  .row {
+    margin: auto;
+    margin-top: 40px;
+  }
+  .navbar-title {
+    text-align: center;
+    color: goldenrod;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  .navbar {
+    width: 100%; /* Largura fixa */
+    height: 70px; /* Altura fixa */
+    margin-bottom: 20px;
+    text-align: right;
+    border-radius: 0px;
+    font-family: "Tangerine", serif;
+  }
+
+  .offcanvas-body {
+    text-align: right;
+  }
+
+  #offcanvasDarkNavbar {
+    width: 250px; /* Largura fixa */
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1905px) {
+  @media (min-width: 991px) {
+    .hamburger {
+      display: none;
+    }
+  }
+  .slider {
+    display: none;
+  }
+  body {
+    margin: 0;
+  height: 100vh; /* Define a altura total do corpo como a da janela de visualização */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; 
+  }
+  .container {
+    max-width: 100%;
+    margin: 0;
+   
+  }
+
+  .navbar-title {
+    text-align: center;
+    color: goldenrod;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .corporate {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e1e8ed;
+  border-radius: 50px;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  .navbarindex {
+    text-align: center;
+    position: absolute;
+  }
+
+  .row {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 80vh;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .nav-link:hover {
+    color: white;
+  }
+
+  .dropdown-item:hover {
+    background-color: white;
+    color: black;
+  }
+  .card {
+    width: 33%;
+    height: 450px;
+    font-size: 10px;
+  }
+
+  .card-image-about {
+    max-width: 100%;
+    height: 200px;
+    background-image: url("../img/backgroud/ideia.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+  }
+  .card-image-mission {
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/backgroud/iqbalstock-muslim-7520627.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+  }
+  .card-image-vision {
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/backgroud/heckimg-tree-7619791.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+  }
+
+  .card-image-modal-deep {
+    width: 90%;
+    height: 200px;
+    border-radius: 30px;
+    background-image: url("../img/backgroudmodal/code.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+    border-radius: 20px;
+    margin-top: 10px;
+    margin: auto;
+  }
+  .card-image-modal-regular {
+    width: 90%;
+    height: 200px;
+    border-radius: 30px;
+    background-image: url("../img/backgroudmodal/pexels-laptop-1839876.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+    margin: auto;
+  }
+
+  .card-image-modal-construction {
+    width: 90%;
+    height: 200px;
+    border-radius: 30px;
+    background-image: url("../img/backgroudmodal/laety79-telephone-612061.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+    margin: auto;
+  }
+}
