@@ -18,6 +18,7 @@ body {
   z-index: 1000;
   justify-content: center;
   height: 70px;
+  padding: 10px;
   max-width: 100%;
   margin-bottom: 20px;
   font-family: "Tangerine", serif;
@@ -33,10 +34,10 @@ body {
 .corporate {
   font-size: 20px;
   font-weight: bold;
-  background-color: #e1e8ed;
-  color: black;
-  border-radius: 50px;
+  color: #e1e8ed;
   margin-right: auto;
+  padding: auto;
+  border-radius: 50px; 
   padding: 10px;
 }
 
@@ -74,7 +75,6 @@ body {
   background-color: white;
   border-radius: 15px;
   display: flex;
-  
 }
 .image-card {
   text-align: center;
@@ -136,8 +136,8 @@ img {
 
   .corporate {
     font-weight: bold;
-    background-color: #e1e8ed;
-  border-radius: 50px;
+   color: #e1e8ed;;
+    border-radius: 50px;
     margin-right: auto;
   }
   .nav-link {
@@ -166,29 +166,24 @@ img {
   }
   .card-container {
     margin-top: 20px;
-    width:190px;
-   height: 190px;
+    width: 190px;
+    height: 190px;
     border: 3px solid #0e0d0d;
     background-color: white;
     border-radius: 15px;
     margin: auto;
-    
-    
   }
 
-  
-
-  .pictures{
-   display: flex;
-  flex-wrap: wrap; /* Permite quebra de linha */
-  justify-content: space-around; /* Espaçamento */
-  justify-content: center;
-  text-align: center;
-
+  .pictures {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha */
+    justify-content: space-around; /* Espaçamento */
+    justify-content: center;
+    text-align: center;
   }
 
   .image-card {
-    width:200px;
+    width: 200px;
   }
 
   img:hover {
@@ -200,7 +195,7 @@ img {
     border-radius: 0px;
     margin-top: 0px;
     justify-content: center;
-  text-align: center;
+    text-align: center;
   }
 
   .card-text {
@@ -243,9 +238,10 @@ img {
   .corporate {
     font-size: 20px;
     font-weight: bold;
-    background-color: #e1e8ed;
-  border-radius: 50px;
+    color: #e1e8ed;;
+    border-radius: 50px;
     margin-right: auto;
+    padding: 10px;
   }
 
   .offcanvas-body {
@@ -264,14 +260,12 @@ img {
     height: 14rem;
     border: 3px solid #0e0d0d;
     border-radius: 10px;
-     background-color: transparent;
+    background-color: transparent;
     border: none;
     border-radius: 0px;
     margin-top: 0px;
     justify-content: center;
-  text-align: center;
-
-
+    text-align: center;
   }
   img {
     width: 200px; /* Largura fixa */
