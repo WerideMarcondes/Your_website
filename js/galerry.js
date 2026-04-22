@@ -1,13 +1,13 @@
 function Showplanet() {
   var planet = document.querySelectorAll(".planet");
   var maintenance = document.querySelectorAll(".nature");
-   var posconstruction = document.querySelectorAll(".construction");;
+  var posconstruction = document.querySelectorAll(".construction");
 
   for (var i = 0; i < planet.length; i++) {
     planet[i].hidden = false;
   }
 
- for (var m = 0; m < posconstruction.length; m++) {
+  for (var m = 0; m < posconstruction.length; m++) {
     posconstruction[m].hidden = true;
   }
   for (var m = 0; m < maintenance.length; m++) {
@@ -32,8 +32,7 @@ function Showmaintenancehome() {
   }
 }
 
-
-function Showconstruction(){
+function Showconstruction() {
   var planet = document.querySelectorAll(".planet");
   var maintenance = document.querySelectorAll(".nature");
   var posconstruction = document.querySelectorAll(".construction");
@@ -49,7 +48,6 @@ function Showconstruction(){
     posconstruction[m].hidden = false;
   }
 }
-
 
 function ShowEverything() {
   var planet = document.querySelectorAll(".planet");
@@ -68,4 +66,24 @@ function ShowEverything() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const image = document.querySelectorAll(".card-container");
+  image.forEach((image) => {
+    image.addEventListener("click", () => {
+      image.classList.add("activa");
+      images = document.querySelectorAll("activa");
+      image.classList.remove("card-container");
+      posconstruction = document.querySelectorAll(".card-container");
+      for (var i = 0; i < images.length; i++) {
+        if (!image[i].classList.contains("activa")) {
+          image[i].hidden = false;
+        }
+      }
+      for (var m = 0; m < posconstruction.length; m++) {
+        posconstruction[m].hidden = true;
+      }
+      // }
+    });
+  });
+});
 
