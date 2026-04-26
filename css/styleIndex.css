@@ -3,6 +3,12 @@ body {
   padding: 0;
   background-color: white;
 }
+
+.Especialtext {
+    color: #da2576;
+    font-family: "Tangerine", serif;
+    font-size: 25px;
+  }
 .container {
   max-width: 100%;
 }
@@ -196,12 +202,11 @@ body {
   .card-image-about {
     display: none;
   }
-.Especialtext{
-color: #da2576;
-  font-family: "Tangerine", serif;
-  font-size: 25px;
-}
-
+  .Especialtext {
+    color: #da2576;
+    font-family: "Tangerine", serif;
+    font-size: 25px;
+  }
 
   body {
     margin: 0;
@@ -297,7 +302,7 @@ color: #da2576;
   }
 
   #about {
-    color:black;
+    color: black;
     margin-top: 0px;
     background-color: #e8eded;
     border-radius: 0;
@@ -414,12 +419,11 @@ color: #da2576;
     display: none;
   }
 
-  .Especialtext{
-color: #da2576;
-  font-family: "Tangerine", serif;
-  font-size: 25px;
-}
-
+  .Especialtext {
+    color: #da2576;
+    font-family: "Tangerine", serif;
+    font-size: 25px;
+  }
 
   .slider {
     display: none;
@@ -542,12 +546,11 @@ color: #da2576;
     display: none;
   }
 
-  .Especialtext{
-color: #da2576;
-  font-family: "Tangerine", serif;
-  font-size: 25px;
-}
-
+  .Especialtext {
+    color: #da2576;
+    font-family: "Tangerine", serif;
+    font-size: 25px;
+  }
 
   body {
     margin: 0;
