@@ -1,7 +1,8 @@
-function Showplanet() {
-  var planet = document.querySelectorAll(".planet");
+function ShowCleaner() {
+  var planet = document.querySelectorAll(".cleaner");
   var maintenance = document.querySelectorAll(".nature");
   var posconstruction = document.querySelectorAll(".construction");
+  image = document.querySelectorAll(".activa");
 
   for (var i = 0; i < planet.length; i++) {
     planet[i].hidden = false;
@@ -13,15 +14,22 @@ function Showplanet() {
   for (var m = 0; m < maintenance.length; m++) {
     maintenance[m].hidden = true;
   }
+     for (var n = 0; n < image.length; n++) {
+    image[0].classList.replace('activa', 'card-container');
+  }
 }
 
 function Showmaintenancehome() {
-  var planet = document.querySelectorAll(".planet");
+  var planet = document.querySelectorAll(".cleaner");
   var maintenance = document.querySelectorAll(".nature");
   var posconstruction = document.querySelectorAll(".construction");
+  image = document.querySelectorAll(".activa");
 
   for (var i = 0; i < maintenance.length; i++) {
     maintenance[i].hidden = false;
+  }
+     for (var n = 0; n < image.length; n++) {
+    image[0].classList.replace('activa', 'card-container');
   }
 
   for (var l = 0; l < planet.length; l++) {
@@ -30,12 +38,16 @@ function Showmaintenancehome() {
   for (var m = 0; m < posconstruction.length; m++) {
     posconstruction[m].hidden = true;
   }
+     for (var n = 0; n < image.length; n++) {
+    image[0].classList.replace('activa', 'card-container');
+  }
 }
 
 function Showconstruction() {
-  var planet = document.querySelectorAll(".planet");
+  var planet = document.querySelectorAll(".cleaner");
   var maintenance = document.querySelectorAll(".nature");
   var posconstruction = document.querySelectorAll(".construction");
+  image = document.querySelectorAll(".activa");
 
   for (var i = 0; i < maintenance.length; i++) {
     maintenance[i].hidden = true;
@@ -47,13 +59,16 @@ function Showconstruction() {
   for (var m = 0; m < posconstruction.length; m++) {
     posconstruction[m].hidden = false;
   }
+     for (var n = 0; n < image.length; n++) {
+    image[0].classList.replace('activa', 'card-container');
+  }
 }
 
 function ShowEverything() {
-  var planet = document.querySelectorAll(".planet");
+  var planet = document.querySelectorAll(".cleaner");
   var maintenance = document.querySelectorAll(".nature");
   var posconstruction = document.querySelectorAll(".construction");
-
+  image = document.querySelectorAll(".activa");
   for (var i = 0; i < maintenance.length; i++) {
     maintenance[i].hidden = false;
   }
@@ -63,6 +78,10 @@ function ShowEverything() {
   }
   for (var m = 0; m < posconstruction.length; m++) {
     posconstruction[m].hidden = false;
+  }
+
+    for (var n = 0; n < image.length; n++) {
+    image[0].classList.replace('activa', 'card-container');
   }
 }
 
@@ -83,6 +102,34 @@ document.addEventListener("DOMContentLoaded", () => {
         posconstruction[m].hidden = true;
       }
       // }
+    });
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+ 
+  let timer = 0;
+let delay = 200;
+let clicked = false;
+
+const image = document.querySelectorAll(".card-container");
+  image.forEach((image) => {
+    image.addEventListener("click", () => {
+      image.classList.add("activa");
+    image.addEventListener('click', () => {
+    if (clicked) {
+        clearTimeout(timer);
+       location.reload();
+        clicked = false;
+    } 
+    else {
+        clicked = true;
+        timer = setTimeout(() => {
+            clicked = false;
+        }, delay);
+    }
+});
     });
   });
 });
