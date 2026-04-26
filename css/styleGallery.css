@@ -227,7 +227,7 @@ img {
     height: 450px;
   }
   img {
-    width: 180px;
+    width: 150px;
     height: 190px;
     object-fit: cover;
     background-size: cover;
@@ -237,7 +237,7 @@ img {
   }
   .card-container {
     margin-top: 20px;
-    width: 180px;
+    width: 150px;
     height: 13rem;
     border-radius: 15px;
     margin: auto;
