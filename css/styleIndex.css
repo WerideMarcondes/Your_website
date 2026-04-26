@@ -9,6 +9,10 @@ body {
     font-family: "Tangerine", serif;
     font-size: 25px;
   }
+
+  .specialties{
+    width: 100%;
+  }
 .container {
   max-width: 100%;
 }
