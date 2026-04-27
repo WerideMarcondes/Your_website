@@ -4,10 +4,10 @@ body {
   background-color: white;
 }
 
-.Especialtext {
-    color: #da2576;
-    font-family: "Tangerine", serif;
-    font-size: 25px;
+.style_corporate{
+   font-size: 20px;
+  font-weight: bold;
+  color: white;
   }
 .container {
   max-width: 100%;
@@ -207,9 +207,9 @@ body {
     display: none;
   }
   .Especialtext {
-    color: #da2576;
-    font-family: "Tangerine", serif;
-    font-size: 25px;
+     font-size: 20px;
+  font-weight: bold;
+  color: white;
   }
 
   body {
@@ -424,9 +424,9 @@ body {
   }
 
   .Especialtext {
-    color: #da2576;
-    font-family: "Tangerine", serif;
-    font-size: 25px;
+    font-size: 20px;
+  font-weight: bold;
+  color: white;
   }
 
   .slider {
@@ -551,9 +551,9 @@ body {
   }
 
   .Especialtext {
-    color: #da2576;
-    font-family: "Tangerine", serif;
-    font-size: 25px;
+     font-size: 20px;
+  font-weight: bold;
+  color: white;
   }
 
   body {
