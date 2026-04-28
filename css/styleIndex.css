@@ -15,7 +15,11 @@ body {
     font-family: "Tangerine", serif;
     font-size: 20px;
   }
-
+  .Especialtext {
+    font-size: 21px;
+    font-weight: bold;
+    color: #e93247;
+  }
 
 .style_corporate {
   font-size: 20px;
@@ -224,7 +228,7 @@ body {
     display: none;
   }
   .Especialtext {
-    font-size: 25px;
+    font-size: 21px;
     font-weight: bold;
     color: #e93247;
   }
@@ -445,7 +449,7 @@ body {
   }
 
   .Especialtext {
-    font-size: 25px;
+    font-size: 21px;
     font-weight: bold;
     color: #e93247;
   }
@@ -576,7 +580,7 @@ body {
   }
 
   .Especialtext {
-    font-size: 25px;
+    font-size: 21px;
     font-weight: bold;
     color: #e93247;
   }
