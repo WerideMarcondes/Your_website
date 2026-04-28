@@ -4,22 +4,28 @@ body {
   background-color: #0e0d0d;
 }
 
-.Especialtext {
-  color: #40e0d0;
-    font-family: "Tangerine", serif;
-    font-size: 20px;
-  }
+.navbar-final-text {
+  font-size: 17px;
+  font-weight: bolder;
+  color: white;
+}
 
 .container {
   margin-top: 100px;
   max-width: 100%;
   font-family: "Tangerine", serif;
 }
+.style_corporate {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
 
 .style_corporate::first-letter {
   color: #40e0d0;
   font-family: "Tangerine", serif;
   font-size: 25px;
+  font-weight: bolder;
 }
 
 
@@ -63,7 +69,9 @@ body {
 }
 
 .icone_navbar-final {
-  font-size: 25px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #40e0d0;
 }
 .link_navbar-final {
   text-align: center;
@@ -73,7 +81,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 60px;
  background-color: #212529;
   /* border: 1px solid #000; Espessura, estilo (solid) e cor  */
   display: flex;
@@ -182,10 +190,14 @@ img {
   body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: white;
   }
   .mainnav {
     display: none;
+  }
+  
+  .navbar-toggler {
+    background-color: #40e0d0;
   }
 
   .container {
@@ -304,9 +316,12 @@ img {
   body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: white;
   }
 
+  .navbar-toggler {
+    background-color: #40e0d0;
+  }
   .container {
     width: 100%;
     min-height: 100vh;

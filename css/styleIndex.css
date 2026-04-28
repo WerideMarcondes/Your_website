@@ -4,19 +4,24 @@ body {
   background-color: white;
 }
 
-
-.navbar-final-text{
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Tangerine", serif;
+.navbar-final-text {
+  font-size: 17px;
+  font-weight: bolder;
   color: white;
 }
 
-.style_corporate{
-   font-size: 20px;
+.Especialtext {
+  color: white;
+    font-family: "Tangerine", serif;
+    font-size: 20px;
+  }
+
+
+.style_corporate {
+  font-size: 20px;
   font-weight: bold;
   color: white;
-  }
+}
 .container {
   max-width: 100%;
 }
@@ -59,8 +64,9 @@ body {
 }
 
 .icone_navbar-final {
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 20px;
+  color: #40e0d0;
 }
 .link_navbar-final {
   text-align: center;
@@ -70,14 +76,13 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 70px;
- background-color: #212529;
+  height: 60px;
+  background-color: #1a1a1a;
   /* border: 1px solid #000; Espessura, estilo (solid) e cor  */
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Tangerine", serif;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-final a {
@@ -207,18 +212,21 @@ body {
   .mainnav {
     display: none;
   }
-  .specialties{
+
+  .navbar-toggler {
+    background-color: #40e0d0;
+  }
+
+  .specialties {
     width: 150%;
-   
-   
   }
   .card-image-about {
     display: none;
   }
   .Especialtext {
-     font-size: 20px;
-  font-weight: bold;
- color: #e93247;
+    font-size: 25px;
+    font-weight: bold;
+    color: #e93247;
   }
 
   body {
@@ -317,14 +325,14 @@ body {
   #about {
     color: black;
     margin-top: 0px;
-    background-color: #e8eded;
+    background-color: white;
     border-radius: 0;
     height: 250px;
   }
 
   #mission {
     color: black;
-    background-color: #f5f6f8;
+    background-color: white;
     margin-top: 0px;
     border-radius: 0;
     height: 400px;
@@ -332,7 +340,7 @@ body {
 
   #vision {
     color: black;
-    background-color: #e1e8ed;
+    background-color: white;
     margin-top: 0px;
     border-radius: 0;
     height: 570px;
@@ -432,10 +440,14 @@ body {
     display: none;
   }
 
+  .navbar-toggler {
+    background-color: #40e0d0;
+  }
+
   .Especialtext {
-    font-size: 20px;
-  font-weight: bold;
-  color: #e93247;
+    font-size: 25px;
+    font-weight: bold;
+    color: #e93247;
   }
 
   .slider {
@@ -559,10 +571,14 @@ body {
     display: none;
   }
 
+  .navbar-toggler {
+    background-color: #40e0d0;
+  }
+
   .Especialtext {
-     font-size: 20px;
-  font-weight: bold;
-color: #e93247;
+    font-size: 25px;
+    font-weight: bold;
+    color: #e93247;
   }
 
   body {
